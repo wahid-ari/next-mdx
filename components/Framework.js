@@ -54,7 +54,7 @@ export function Item() {
 
   return (
     <div className="my-4 grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-      <a className="no-underline" href="https://nextjs.org/" target="_blank" rel="noopener">
+      <a className="no-underline" href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
         <div className="flex items-center gap-3 p-4 bg-white dark:bg-neutral-900 rounded-md hover:cursor-pointer border border-gray-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-all">
           <div className="relative h-8 w-8">
             {darkMode ? <Image src={nextLight} alt="Nextjs" /> : <Image src={next} alt="Nextjs" />}
@@ -63,7 +63,7 @@ export function Item() {
         </div>
       </a>
 
-      <a className="no-underline" href="https://vercel.com/" target="_blank" rel="noopener">
+      <a className="no-underline" href="https://vercel.com/" target="_blank" rel="noopener noreferrer">
         <div className="flex items-center gap-3 p-4 bg-white dark:bg-neutral-900 rounded-md hover:cursor-pointer border border-gray-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-all">
           <div className="relative h-8 w-8 flex items-center">
             <Image src={vercel} alt="Vercel" layout="fill" />
@@ -72,7 +72,7 @@ export function Item() {
         </div>
       </a>
 
-      <a className="no-underline" href="https://reactjs.org/" target="_blank" rel="noopener">
+      <a className="no-underline" href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
         <div className="flex items-center gap-3 p-4 bg-white dark:bg-neutral-900 rounded-md hover:cursor-pointer border border-gray-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-all">
           <div className="relative h-8 w-8 flex items-center">
             <Image src={react} alt="React" />
@@ -81,7 +81,7 @@ export function Item() {
         </div>
       </a>
 
-      <a className="no-underline" href="https://vuejs.org/" target="_blank" rel="noopener">
+      <a className="no-underline" href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">
         <div className="flex items-center gap-3 p-4 bg-white dark:bg-neutral-900 rounded-md hover:cursor-pointer border border-gray-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-all">
           <div className="relative h-8 w-8 flex items-center">
             <Image src={vue} alt="Vue" />
@@ -90,7 +90,7 @@ export function Item() {
         </div>
       </a>
 
-      <a className="no-underline" href="https://nuxtjs.org/" target="_blank" rel="noopener">
+      <a className="no-underline" href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer">
         <div className="flex items-center gap-3 p-4 bg-white dark:bg-neutral-900 rounded-md hover:cursor-pointer border border-gray-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-all">
           <div className="relative h-8 w-8 flex items-center">
             <Image src={nuxt} alt="Nuxt" />
@@ -99,7 +99,7 @@ export function Item() {
         </div>
       </a>
 
-      <a className="no-underline" href="https://angular.io/" target="_blank" rel="noopener">
+      <a className="no-underline" href="https://angular.io/" target="_blank" rel="noopener noreferrer">
         <div className="flex items-center gap-3 p-4 bg-white dark:bg-neutral-900 rounded-md hover:cursor-pointer border border-gray-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-all">
           <div className="relative h-8 w-8 flex items-center">
             <Image src={angular} alt="Angular" />
@@ -108,7 +108,7 @@ export function Item() {
         </div>
       </a>
 
-      <a className="no-underline" href="https://svelte.dev/" target="_blank" rel="noopener">
+      <a className="no-underline" href="https://svelte.dev/" target="_blank" rel="noopener noreferrer">
         <div className="flex items-center gap-3 p-4 bg-white dark:bg-neutral-900 rounded-md hover:cursor-pointer border border-gray-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-all">
           <div className="relative h-8 w-8 flex items-center">
             <Image src={svelte} alt="Svelte" />
@@ -117,7 +117,7 @@ export function Item() {
         </div>
       </a>
 
-      <a className="no-underline" href="https://www.solidjs.com/" target="_blank" rel="noopener">
+      <a className="no-underline" href="https://www.solidjs.com/" target="_blank" rel="noopener noreferrer">
         <div className="flex items-center gap-3 p-4 bg-white dark:bg-neutral-900 rounded-md hover:cursor-pointer border border-gray-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-all">
           <div className="relative h-8 w-8 flex items-center">
             <Image src={solid} alt="Solid" />

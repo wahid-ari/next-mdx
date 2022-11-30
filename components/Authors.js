@@ -15,6 +15,7 @@ export function Author({ name, link }) {
         key={name}
         href={link}
         target="_blank"
+        rel="noopener noreferrer"
         className="mx-1 text-gray-800 dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-500 transition-all duration-200"
       >
         {name}

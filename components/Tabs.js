@@ -41,3 +41,5 @@ Tabs.Tab = ({ children, className }) => {
     </Tab.Panel>
   )
 }
+
+Tabs.Tab.displayName = "Tabs.Tab"
