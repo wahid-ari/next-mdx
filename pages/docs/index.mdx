@@ -8,6 +8,13 @@ import Badge from "@components/Badge";
 	<meta name="description" content="MDX"></meta>
 </Head>
 
+This is an array `[1, 2, 3]{:js}` of numbers 1 through 3.
+
+```js showLineNumbers title="multiply.js" {1} /const/
+const multiply = (a, b) => a * b
+multiply(2, 2) // 4
+```
+
 # MDX Component
 
 ## Heading
@@ -236,10 +243,10 @@ Renders:
 console.log("hello, world");
 ```
 
-You can also add the `{line number, line number-line number}` modifier to highlight specific lines:
+You can also add the `showLineNumbers`, `title="index.js"` or `{line number, line number-line number}` modifier to highlight specific lines:
 
 ````markdown filename="index.mdx"
-```jsx filename="index.mdx" {4, 7-8}
+```jsx showLineNumbers title="index.js" {4, 7-8}
 import useSWR from "swr";
 
 function Profile() {
@@ -252,7 +259,7 @@ function Profile() {
 ```
 ````
 
-```jsx filename="index.mdx" {4, 7-8}
+```jsx showLineNumbers title="index.js" {4, 7-8}
 import useSWR from "swr";
 
 function Profile() {
@@ -331,10 +338,10 @@ Nested quotes:
 | Left-aligned | Center-aligned | Right-aligned |
 
 ```jsx filename="index.mdx"
-| Syntax 				| Description |   Test Text |
+| Syntax        | Description |   Test Text |
 | :-----------  | :---------: | --------:   |
-| Header        |    	  Title | Here's this |
-| Paragraph			|      Text   |   And more  |
+| Header        |    Title    | Here's this |
+| Paragraph     |    Text     |   And more  |
 | Strikethrough |             |   ~~Text~~  |
 ```
 
@@ -345,12 +352,12 @@ Nested quotes:
 | Strikethrough |             |    ~~Text~~ |
 
 ```jsx filename="index.mdx"
-| Badge | Description | Code | Icon |
-| :- | :-: | :-: | -: |
-| <Badge>Default</Badge> | Default | <span className="font-semibold text-blue-500">100</span> | ☑️ |
-| <Badge variant="success">Success</Badge> | Success | <span className="font-semibold text-green-500">200</span> | ✅ |
-| <Badge variant="info">Warning</Badge> | Warning | <span className="font-semibold text-orange-500">400</span> | ⚠️ |
-| <Badge variant="danger">Danger</Badge> | Danger | <span className="font-semibold text-red-500">500</span> | ⛔ |
+| Badge                                    | Description |                         Code                                | Icon |
+| :--------------------------------------- | :---------: | :--------------------------------------------------------:  | ---: |
+| <Badge>Default</Badge>                   |   Default   | <span className="font-semibold text-blue-500">100</span>  |  ☑️ |
+| <Badge variant="success">Success</Badge> |   Success   | <span className="font-semibold text-green-500">200</span> |  ✅ |
+| <Badge variant="info">Warning</Badge>    |   Warning   | <span className="font-semibold text-orange-500">400</span>|  ⚠️ |
+| <Badge variant="danger">Danger</Badge>   |   Danger    | <span className="font-semibold text-red-500">500</span>   |  ⛔ |
 ```
 
 | Badge                                    | Description |                         Code                                | Icon |

@@ -1,0 +1,64 @@
+html[class="dark"] {
+	--bg-title: #242424;
+	--title-color: #f1f1f1;
+  --bg-highlight: rgb(34, 34, 34);
+  --bg-highlight-border: rgb(78, 78, 78);
+  --line-number-color: #7a7a7a;
+}
+
+html[class="light"] {
+	--bg-title: #f1f1f1;
+	--title-color: #242424;
+  --bg-highlight: rgb(238, 238, 238);
+  --bg-highlight-border: rgb(224, 224, 224);
+  --line-number-color: rgb(156, 156, 156);
+}
+
+div[data-rehype-pretty-code-fragment] {
+  overflow: hidden;
+  background-color: var(--bg-title);
+  border-radius: 0.5rem;
+  margin: 16px 0px;
+}
+
+div[data-rehype-pretty-code-title] {
+  color: var(--title-color);
+  padding: 4px 12px;
+  font-size: 14px;
+}
+ 
+div[data-rehype-pretty-code-fragment] pre {
+  overflow-x: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+div[data-rehype-pretty-code-fragment] .line {
+  border-left-width: 4px;
+  border-left-color: transparent;
+}
+ 
+div[data-rehype-pretty-code-fragment] .line--highlighted {
+  /* border-left-color: var(--bg-highlight-border); */
+  background-color: var(--bg-highlight);
+}
+
+div[data-rehype-pretty-code-fragment] code {
+  display: grid;
+}
+
+code[data-line-numbers] {
+  counter-reset: lineNumber;
+}
+ 
+code[data-line-numbers] .line::before {
+  counter-increment: lineNumber;
+  content: counter(lineNumber);
+  display: inline-block;
+  text-align: right;
+  margin-right: 0.75rem;
+  width: 1rem;
+  color: var(--line-number-color);
+}

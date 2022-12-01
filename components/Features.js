@@ -16,7 +16,7 @@ export default function Features() {
           text="Lightweight"
           icon={
             <svg
-              className="w-6 h-6 mt-0.5"
+              className="w-6 h-6 md:mt-0.5"
               viewBox="0 0 24 24"
               stroke="currentColor"
               strokeWidth="2"
@@ -34,7 +34,7 @@ export default function Features() {
           text="Realtime"
           icon={
             <svg
-              className="w-6 h-6 mt-0.5"
+              className="w-6 h-6 md:mt-0.5"
               fill="none"
               stroke="currentColor"
               strokeLinecap="round"
@@ -51,7 +51,7 @@ export default function Features() {
           text="Suspense"
           icon={
             <svg
-              className="w-6 h-6 mt-0.5"
+              className="w-6 h-6 md:mt-0.5"
               viewBox="0 0 24 24"
               stroke="currentColor"
               strokeWidth="2"
@@ -69,7 +69,7 @@ export default function Features() {
           text="Pagination"
           icon={
             <svg
-              className="w-6 h-6 mt-0.5"
+              className="w-6 h-6 md:mt-0.5"
               viewBox="0 0 24 24"
               stroke="currentColor"
               strokeWidth="2"
@@ -87,7 +87,7 @@ export default function Features() {
           text="Agnostic"
           icon={
             <svg
-              className="w-6 h-6 mt-0.5"
+              className="w-6 h-6 md:mt-0.5"
               viewBox="0 0 24 24"
               stroke="currentColor"
               strokeWidth="2"
@@ -110,7 +110,7 @@ export default function Features() {
           text="SSR / SSG"
           icon={
             <svg
-              className="w-6 h-6 mt-0.5"
+              className="w-6 h-6 md:mt-0.5"
               fill="none"
               stroke="currentColor"
               strokeLinecap="round"
@@ -127,7 +127,7 @@ export default function Features() {
           text="TypeScript"
           icon={
             <svg
-              className="w-6 h-6 mt-0.5"
+              className="w-6 h-6 md:mt-0.5"
               fill="none"
               stroke="currentColor"
               strokeLinecap="round"
@@ -145,7 +145,7 @@ export default function Features() {
           text="Remote + Local"
           icon={
             <svg
-              className="w-6 h-6 mt-0.5"
+              className="w-6 h-6 md:mt-0.5"
               fill="none"
               stroke="currentColor"
               strokeLinecap="round"

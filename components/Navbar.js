@@ -14,11 +14,17 @@ export default function Navbar() {
           <Link href="/" className="text-sky-500 hover:text-sky-600 transition-all font-medium">
             Home
           </Link>
-          <Link href="/docs/mdx" className="text-sky-500 hover:text-sky-600 transition-all font-medium">
+          <Link href="/docs" className="text-sky-500 hover:text-sky-600 transition-all font-medium">
             MDX
           </Link>
           <Link href="/docs/custom" className="text-sky-500 hover:text-sky-600 transition-all font-medium">
             Custom
+          </Link>
+          <Link href="/features" className="text-sky-500 hover:text-sky-600 transition-all font-medium">
+            Features
+          </Link>
+          <Link href="/features/chart" className="text-sky-500 hover:text-sky-600 transition-all font-medium">
+            Chart
           </Link>
           <Link href="#" className="text-sky-500 hover:text-sky-600 transition-all font-medium">
             Blog List
