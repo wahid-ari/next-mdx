@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import ThemeChanger from '@components/ThemeChanger';
 import Navbar from '@components/Navbar';
 
 export default function Home() {
@@ -16,14 +15,14 @@ export default function Home() {
 
       <main className="dark:bg-neutral-900 h-screen flex items-center justify-center flex-wrap">
         <div>
-          <h1 className="text-4xl text-neutral-800 dark:text-white font-semibold tracking-wide mb-4">
-            <a href="https://nextjs.org" className="text-purple-600 hover:text-purple-700 transition-all" target="_blank" rel="noopener noreferrer">Next.js</a>
-            {' '} + {' '}
-            <a href="https://tailwindcss.com" className="text-cyan-600 hover:text-cyan-700 transition-all" target="_blank" rel="noopener noreferrer">Tailwind CSS</a>
-            {' '} + {' '}
-            <a href="https://mdxjs.com" className="text-orange-600 hover:text-orange-700 transition-all" target="_blank" rel="noopener noreferrer">MDX</a>
-          </h1>
-          <div className="flex justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
+            <a href="https://nextjs.org" className="text-4xl font-semibold tracking-wide text-purple-600 hover:text-purple-700 transition-all" target="_blank" rel="noopener noreferrer">Next.js</a>
+            <span className="text-4xl font-semibold"> + </span>
+            <a href="https://tailwindcss.com" className="text-4xl font-semibold tracking-wide text-cyan-600 hover:text-cyan-700 transition-all" target="_blank" rel="noopener noreferrer">Tailwind CSS</a>
+            <span className="text-4xl font-semibold"> + </span>
+            <a href="https://mdxjs.com" className="text-4xl font-semibold tracking-wide text-orange-600 hover:text-orange-700 transition-all" target="_blank" rel="noopener noreferrer">MDX</a>
+          </div>
+          <div className="flex justify-center gap-4 text-center text-xl">
             <p>Example how to setup Next.js, MDX & TailwindCSS</p>
           </div>
         </div>

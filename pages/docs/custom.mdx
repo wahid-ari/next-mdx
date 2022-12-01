@@ -1,5 +1,3 @@
-// import Callout from "nextra-theme-docs/callout";
-// import Bleed from "nextra-theme-docs/bleed";
 import Image from "next/image";
 import Badge from "@components/Badge";
 import BadgeOutline from "@components/BadgeOutline";
@@ -55,6 +53,13 @@ import {
 	TrashIcon,
 } from "@heroicons/react/24/outline";
 import demo from "@public/demo.png";
+import Head from "next/head";
+
+<Head>
+	<title>Custom Components</title>
+	<meta name="title" content="Custom Components"></meta>
+	<meta name="description" content="Custom Components"></meta>
+</Head>
 
 # Custom Component
 
@@ -62,8 +67,7 @@ import demo from "@public/demo.png";
 
 [Heroicons](https://heroicons.com/)
 
-<br />
-<div className="flex gap-3 flex-wrap sm:w-[540px]">
+<div className="flex gap-3 flex-wrap sm:w-[540px] mb-4">
 	<CheckBadgeIcon className="h-6 w-6" />
 	<AcademicCapIcon className="h-6 w-6" />
 	<AdjustmentsHorizontalIcon className="h-6 w-6" />
@@ -117,51 +121,21 @@ import { CheckBadgeIcon } from "@heroicons/react/24/outline";
 <CheckBadgeIcon className="h-6 w-6" />
 ```
 
-## Nextra Tabs
-
-```js filename="index.mdx"
-<Nextra.Tabs items={["npm", "pnpm", "yarn"]}>
-	<Nextra.Tab>npm</Nextra.Tab>
-	<Nextra.Tab>pnpm</Nextra.Tab>
-	<Nextra.Tab>yarn</Nextra.Tab>
-</Nextra.Tabs>
-```
-
-Render:
-
-<Nextra.Tabs items={["npm", "pnpm", "yarn"]}>
-	<Nextra.Tab>
-		```bash filename="bash" 
-		npm 
-		```
-	</Nextra.Tab>
-	<Nextra.Tab>
-		```bash filename="bash" 
-		pnpm 
-		```
-	</Nextra.Tab>
-	<Nextra.Tab>
-		```bash filename="bash" 
-		yarn 
-		```
-	</Nextra.Tab>
-</Nextra.Tabs>
-
 ## Tabs
 
 ```js filename="index.mdx"
 import Tabs from "@components/Tabs";
 
 <Tabs items={["Recent", "Popular", "Trending"]}>
-	<Tabs.Tab className="p-3">
+	<Tabs.Tab>
 		Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 		Labore ullamco veniam eiusmod anim.
 	</Tabs.Tab>
-	<Tabs.Tab className="p-3">
+	<Tabs.Tab>
 		Consequat cupidatat proident laborum eiusmod et officia mollit culpa ullamco commodo. 
 		Proident nostrud occaecat laboris eu velit excepteur.
 	</Tabs.Tab>
-	<Tabs.Tab className="p-3">
+	<Tabs.Tab>
 		Aliquip quis adipisicing exercitation et labore proident magna culpa non. 
 		Ut fugiat eiusmod aliqua ullamco.
 	</Tabs.Tab>
@@ -171,15 +145,15 @@ import Tabs from "@components/Tabs";
 Render:
 
 <Tabs items={["Recent", "Popular", "Trending"]}>
-	<Tabs.Tab className="p-3">
+	<Tabs.Tab>
 		Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 		Labore ullamco veniam eiusmod anim.
 	</Tabs.Tab>
-	<Tabs.Tab className="p-3">
+	<Tabs.Tab>
 		Consequat cupidatat proident laborum eiusmod et officia mollit culpa ullamco commodo. 
 		Proident nostrud occaecat laboris eu velit excepteur.
 	</Tabs.Tab>
-	<Tabs.Tab className="p-3">
+	<Tabs.Tab>
 		Aliquip quis adipisicing exercitation et labore proident magna culpa non. 
 		Ut fugiat eiusmod aliqua ullamco.
 	</Tabs.Tab>
@@ -187,7 +161,6 @@ Render:
 
 ## Accordion
 
-<br />
 ```js filename="index.mdx" import Accordion from '@components/Accordion'
 
 <Accordion
@@ -251,7 +224,7 @@ import Badge from '@components/Badge'
 <Badge variant="dark">Dark</Badge>
 ```
 
-Render:<br/><br/>
+Render:
 
 <div className="flex flex-wrap gap-y-3">
 	<Badge>😂 Default</Badge>
@@ -277,7 +250,7 @@ import BadgeOutline from '@components/BadgeOutline'
 <BadgeOutline variant="dark">Dark</BadgeOutline>
 ```
 
-Render:<br/><br/>
+Render:
 
 <div className="flex flex-wrap gap-y-3">
 	<BadgeOutline>😂 Default</BadgeOutline>
@@ -295,23 +268,19 @@ Render:<br/><br/>
 import Alert from '@components/Alert'
 
 <Alert>😂 Default</Alert>
-<Alert variant="success"><span className="font-semibold">Success !</span> Success message</Alert>
-<Alert variant="warning"><span className="font-bold">Warning !</span> Warning message</Alert>
+<Alert variant="success">Success message</Alert>
+<Alert variant="warning">Warning message</Alert>
 <Alert variant="info">Info</Alert>
 <Alert variant="purple">Purple</Alert>
 <Alert variant="danger">Danger</Alert>
 <Alert variant="dark">Dark</Alert>
 ```
 
-Render:<br/><br/>
+Render:
 
 <Alert>😂 Default</Alert>
-<Alert variant="success">
-	<span className="font-semibold">Success !</span> Success message
-</Alert>
-<Alert variant="warning">
-	<span className="font-bold">Warning !</span> Warning message
-</Alert>
+<Alert variant="success">Success message</Alert>
+<Alert variant="warning">Warning message</Alert>
 <Alert variant="info">Info</Alert>
 <Alert variant="purple">Purple</Alert>
 <Alert variant="danger">Danger</Alert>
@@ -323,23 +292,19 @@ Render:<br/><br/>
 import AlertOutline from '@components/AlertOutline'
 
 <AlertOutline>😂 Default</AlertOutline>
-<AlertOutline variant="success"><span className="font-semibold">Success !</span> Success message</AlertOutline>
-<AlertOutline variant="warning"><span className="font-bold">Warning !</span> Warning message</AlertOutline>
+<AlertOutline variant="success">Success message</AlertOutline>
+<AlertOutline variant="warning">Warning message</AlertOutline>
 <AlertOutline variant="info">Info</AlertOutline>
 <AlertOutline variant="purple">Purple</AlertOutline>
 <AlertOutline variant="danger">Danger</AlertOutline>
 <AlertOutline variant="dark">Dark</AlertOutline>
 ```
 
-Render:<br/><br/>
+Render:
 
 <AlertOutline>😂 Default</AlertOutline>
-<AlertOutline variant="success">
-	<span className="font-semibold">Success !</span> Success message
-</AlertOutline>
-<AlertOutline variant="warning">
-	<span className="font-bold">Warning !</span> Warning message
-</AlertOutline>
+<AlertOutline variant="success">Success message</AlertOutline>
+<AlertOutline variant="warning">Warning message</AlertOutline>
 <AlertOutline variant="info">Info</AlertOutline>
 <AlertOutline variant="purple">Purple</AlertOutline>
 <AlertOutline variant="danger">Danger</AlertOutline>
@@ -348,9 +313,7 @@ Render:<br/><br/>
 ## Custom div
 
 ```html filename="index.mdx"
-<div
-	className="p-4 border border-gray-200 dark:border-neutral-800 rounded mt-6"
->
+<div className="p-4 border border-gray-200 dark:border-neutral-800 rounded mt-6">
 	Stars on GitHub!
 </div>
 ```
@@ -361,68 +324,6 @@ Render:
 	Stars on GitHub!
 </div>
 
-## Callout
-
-### Default
-
-```js filename="index.mdx"
-import Callout from "nextra-theme-docs/callout";
-
-<Callout emoji="⚡">
-	**Space Invaders** is a 1978 shoot 'em up arcade game developed by Tomohiro
-	Nishikado.
-</Callout>;
-```
-
-{/* <Callout emoji="⚡">
-	**Space Invaders** is a 1978 shoot 'em up arcade game developed by Tomohiro
-	Nishikado.
-</Callout> */}
-
-### Info
-
-```js filename="index.mdx"
-import Callout from "nextra-theme-docs/callout";
-
-<Callout type="info" emoji="☑️">
-	**Space Invaders** is a 1978 shoot 'em up arcade game developed by Tomohiro
-	Nishikado.
-</Callout>;
-```
-
-{/* <Callout type="info" emoji="☑️">
-	**Space Invaders** is a 1978 shoot 'em up arcade game developed by Tomohiro
-	Nishikado.
-</Callout> */}
-
-### Warning
-
-```js filename="index.mdx"
-import Callout from "nextra-theme-docs/callout";
-
-<Callout type="warning" emoji="⚠️">
-	This API will be deprecated soon.
-</Callout>;
-```
-
-{/* <Callout type="warning" emoji="⚠️">
-	This API will be deprecated soon.
-</Callout> */}
-
-### Error
-
-```js filename="index.mdx"
-import Callout from "nextra-theme-docs/callout";
-
-<Callout type="error" emoji="️⛔">
-	This is a dangerous feature that can cause everything to explode.
-</Callout>;
-```
-
-{/* <Callout type="error" emoji="️⛔">
-	This is a dangerous feature that can cause everything to explode.
-</Callout> */}
-
 You can use import and use React components inside your Markdown files like this:
 
 ```js filename="index.mdx"
@@ -430,12 +331,6 @@ import Callout from "nextra-theme-docs/callout";
 
 <div className="p-4 border border-gray-200 dark:border-gray-900 rounded mt-6">
 	**Markdown With React Components**
-	<Callout emoji="✅">
-		**MDX** (the library), at its core, transforms MDX (the syntax) to JSX. It
-		receives an MDX string and outputs a _JSX string_. It does this by parsing
-		the MDX document to a syntax tree and then generates a JSX document from
-		that tree.
-	</Callout>
 </div>;
 ```
 
@@ -443,63 +338,4 @@ Render:
 
 <div className="p-4 border border-gray-200 dark:border-gray-900 rounded mt-6">
 **Markdown With React Components**
-
-{/* <Callout emoji="✅">
-  **MDX** (the library), at its core, transforms MDX (the syntax) to JSX. It
-  receives an MDX string and outputs a _JSX string_. It does this by parsing the
-  MDX document to a syntax tree and then generates a JSX document from that
-  tree.
-</Callout> */}
 </div>
-
-## Bleed
-
-```jsx
-import Bleed from "nextra-theme-docs/bleed";
-
-<Bleed>
-	<div
-		style={{
-			border: "1px solid #888",
-			padding: "4rem 2.5rem",
-			textAlign: "center",
-		}}
-	>
-		_There is nothing to writing. All you do is sit down at a typewriter and
-		**bleed**._ — Ernest Hemingway
-	</div>
-</Bleed>;
-```
-
-When wrapping your content with `<Bleed>`, it will be slightly wider than the container
-and will overflow on both sides.
-
-Render:
-
-{/* <Bleed>
-  <div style={{ border: '1px solid #888', padding: '4rem 2.5rem', textAlign: 'center' }}>
-    _There is nothing to writing. All you do is sit down at a typewriter and **bleed**._
-
-    — Ernest Hemingway
-
-  </div>
-</Bleed> */}
-
-It provides a better reading experience when you want to present some graphical information, which normally
-looks nicer in a larger size.
-
-For example you can put text, image, video or any component inside:
-
-```jsx
-import Bleed from 'nextra-theme-docs/bleed'
-
-<Bleed>Hey, I can use **Markdown** syntax here.</Bleed>
-
-<Bleed>![Landscape](https://images.unsplash.com/photo-1644840379571-2a973eee0726?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)</Bleed>
-```
-
-Render:
-
-{/* <Bleed>Hey, I can use **Markdown** syntax here.</Bleed> */}
-
-{/* <Bleed>![Landscape](https://images.unsplash.com/photo-1644840379571-2a973eee0726?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)</Bleed> */}

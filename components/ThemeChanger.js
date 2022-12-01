@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTheme } from 'next-themes'
-import { MoonIcon, SunIcon } from "@heroicons/react/outline";
+import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 
 export default function ThemeChanger({ simple }) {
   // https://github.com/pacocoursey/next-themes#avoid-hydration-mismatch
