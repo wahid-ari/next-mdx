@@ -1,0 +1,413 @@
+---
+title: Functions for Beginners
+date: 'August 4, 2021'
+description: Learn how to create and use functions
+thumbnailUrl: '/demo.png'
+tags: ['functions', 'javascript']
+---
+
+# Heading 1
+
+<div>
+  This is a blog post about <strong>functions</strong>. <br/>
+  We'll learn what functions are, how to write functions, and how to use them.
+</div>
+
+# MDX Component
+
+## Heading
+
+```html filename="index.mdx"
+<h1>**Hello**, This Is a _Title_ Inside `h1`</h1>
+{/* using html tag to avoid being rendered in the sidebar */}
+```
+
+# Hello, This Is a _Title_ Inside `h1`
+
+```html filename="index.mdx"
+<h2>**Hello**, This Is a _Title_ Inside `h2`</h2>
+{/* using html tag to avoid being rendered in the sidebar */}
+```
+
+## **Hello**, This Is a _Title_ Inside `h2`
+
+```markdown filename="index.mdx"
+### **Hello**, This Is a _Title_ Inside `h3`
+```
+
+<h3>**Hello**, This Is a _Title_ Inside `h3`</h3>
+
+```markdown filename="index.mdx"
+#### **Hello**, This Is a _Title_ Inside `h4`
+```
+
+<h4>**Hello**, This Is a _Title_ Inside `h4`</h4>
+
+```markdown filename="index.mdx"
+##### **Hello**, This Is a _Title_ Inside `h5`
+```
+
+<h5>**Hello**, This Is a _Title_ Inside `h5`</h5>
+
+```markdown filename="index.mdx"
+###### **Hello**, This Is a _Title_ Inside `h6`
+```
+
+<h6>**Hello**, This Is a _Title_ Inside `h6`</h6>
+
+## Text
+
+```markdown filename="index.mdx"
+With Nextra, all your `.md` and `.mdx` files under the pages directory will be rendered with [MDX](https://mdxjs.com/about), it's an
+advanced Markdown format with React component support.
+```
+
+With Nextra, all your `.md` and `.mdx` files under the pages directory will be rendered with [MDX](https://mdxjs.com/about), it's an
+advanced Markdown format with React component support.
+
+## Text Variant
+
+```markdown filename="index.mdx"
+**bold**
+```
+
+**bold**
+
+```markdown filename="index.mdx"
+**_italicized bold_**
+```
+
+**_italicized bold_**
+
+```markdown filename="index.mdx"
+_italicized_
+```
+
+_italicized_
+
+```markdown filename="index.mdx"
+~~strikethrough.~~
+```
+
+~~strikethrough.~~
+
+## Emoji ⛺
+
+[Emoji Docs](https://emojipedia.org/) 😂
+
+⚠️ ⛔ ✅ ☑️ ✔️ ❌ 🚀 ⏱️ 💻 📁 🔒 🛠️ 📢 🔔 💡 📓 📆 🌄 🌇 🌍 🌒 ⚡ ❄️ 🔥 ⭐☀️
+
+## Line Separator
+
+```markdown filename="index.mdx"
+---
+```
+
+---
+
+## Image
+
+**External URL :**
+
+```markdown filename="index.mdx"
+![Image External](https://images.unsplash.com/photo-1644840379571-2a973eee0726?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=470&q=80)
+```
+
+![Image External](https://images.unsplash.com/photo-1644840379571-2a973eee0726?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=470&q=80)
+
+**Static Image URL :**
+
+If the `demo.png` file is located at `/public/demo.png`, you can use the code below to display it:
+
+```markdown filename="index.mdx"
+![Image External](/demo.png)
+```
+
+![Image External](/demo.png)
+
+**Static Next/Image :**
+
+You can use [Next.js Image](https://nextjs.org/docs/basic-features/image-optimization) directly in MDX.
+
+If the `demo.png` file is located at `/public/demo.png`, you can use the code below to display it:
+
+```js filename="index.mdx"
+import Image from "next/image";
+
+<Image src="/demo.png" alt="Hello" width={500} height={300} />;
+```
+
+<Image src="/demo.png" alt="Hello" width={500} height={300} />
+
+## Link
+
+### Autolink literals
+
+```markdown filename="index.mdx"
+www.example.com, https://example.com, and contact@example.com.
+```
+
+www.example.com, https://example.com, and contact@example.com.
+
+```markdown filename="index.mdx"
+[MDX](https://mdxjs.com/about), it's an external link
+```
+
+[MDX](https://mdxjs.com/about), it's an external link
+
+```markdown filename="index.mdx"
+[Index](/), it's an internal link
+```
+
+[Index](/), it's an internal link
+
+## List
+
+```markdown filename="index.mdx"
+1. one
+2. two
+3. three
+```
+
+1. one
+2. two
+3. three
+
+```markdown filename="index.mdx"
+- one
+- two
+- three
+```
+
+- one
+- two
+- three
+
+```markdown filename="index.mdx"
+- asterisks for unordered items
+
+1. decimals and a dot for ordered items
+```
+
+- asterisks for unordered items
+
+1. decimals and a dot for ordered items
+
+```markdown filename="index.mdx"
+- Next
+  - docs
+
+* Next
+  - docs
+
+- Next
+  - docs
+```
+
+- Next
+  - docs
+
+* Next
+  - docs
+
+- Next
+  - docs
+
+## Task List
+
+```markdown filename="index.mdx"
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
+```
+
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
+
+## Syntax Highlighting
+
+Automatically syntax highlighting:
+
+````markdown
+```js title="index.mdx"
+console.log("hello, world");
+```
+````
+
+Renders:
+
+```js title="index.mdx"
+console.log("hello, world");
+```
+
+You can also add the `showLineNumbers`, `title="index.js"` or `{line number, line number-line number}` modifier to highlight specific lines:
+
+````markdown filename="index.mdx"
+```jsx showLineNumbers title="index.js" {4, 7-8}
+import useSWR from "swr";
+
+function Profile() {
+	const { data, error } = useSWR("/api/user", fetcher);
+
+	if (error) return <div>failed to load</div>;
+	if (!data) return <div>loading...</div>;
+	return <div>hello {data.name}!</div>;
+}
+```
+````
+
+Renders:
+
+```jsx showLineNumbers title="index.js" {4, 7-8}
+import useSWR from "swr";
+
+function Profile() {
+	const { data, error } = useSWR("/api/user", fetcher);
+
+	if (error) return <div>failed to load</div>;
+	if (!data) return <div>loading...</div>;
+	return <div>hello {data.name}!</div>;
+}
+```
+
+## Diff Code
+
+````markdown
+```diff title="index.mdx"
+- import { useSWRInfinite } from 'swr'
++ import useSWRInfinite from 'swr/infinite'
+```
+````
+
+```diff title="index.mdx"
+- import { useSWRInfinite } from 'swr'
++ import useSWRInfinite from 'swr/infinite'
+```
+
+## Inline Code
+
+```markdown
+You can use \`content\` to wrap inline code content like: `let x = 1`.
+```
+
+You can use \`content\` to wrap inline code content like: `let x = 1`.
+
+## Blockquote
+
+```html title="index.mdx"
+> Where some people measure progress in answers-right per test or tests-passed per year, we are more interested in Sistine-Chapel-Ceilings per Lifetime.
+>
+> — Alan Kay, A Personal Computer for Children of All Ages
+```
+
+> Where some people measure progress in answers-right per test or tests-passed per year, we are more interested in Sistine-Chapel-Ceilings per Lifetime.
+>
+> — Alan Kay, A Personal Computer for Children of All Ages
+
+Nested quotes:
+
+```html title="index.mdx"
+> > Where some people measure progress in answers-right per test or tests-passed per year, we are more interested in Sistine-Chapel-Ceilings per Lifetime.
+> >
+> > — Alan Kay, A Personal Computer for Children of All Ages
+>
+> This is **great**.
+>
+> — Shu Ding.
+```
+
+> > Where some people measure progress in answers-right per test or tests-passed per year, we are more interested in Sistine-Chapel-Ceilings per Lifetime.
+> >
+> > — Alan Kay, A Personal Computer for Children of All Ages
+>
+> This is **great**.
+>
+> — Shu Ding.
+
+## Table
+
+```jsx title="index.mdx"
+| Left | Center | Right |
+| :--- | :----: | ----: |
+| Left-aligned | Center-aligned | Right-aligned |
+```
+
+| Left         |     Center     |         Right |
+| :----------- | :------------: | ------------: |
+| Left-aligned | Center-aligned | Right-aligned |
+
+```jsx title="index.mdx"
+| Syntax        | Description |   Test Text |
+| :-----------  | :---------: | --------:   |
+| Header        |    Title    | Here's this |
+| Paragraph     |    Text     |   And more  |
+| Strikethrough |             |   ~~Text~~  |
+```
+
+| Syntax        | Description |   Test Text |
+| :------------ | :---------: | ----------: |
+| Header        |    Title    | Here's this |
+| Paragraph     |    Text     |    And more |
+| Strikethrough |             |    ~~Text~~ |
+
+```jsx title="index.mdx"
+| Badge                                    | Description |                         Code                                | Icon |
+| :--------------------------------------- | :---------: | :--------------------------------------------------------:  | ---: |
+| <Badge>Default</Badge>                   |   Default   | <span className="font-semibold text-blue-500">100</span>  |  ☑️ |
+| <Badge variant="success">Success</Badge> |   Success   | <span className="font-semibold text-green-500">200</span> |  ✅ |
+| <Badge variant="info">Warning</Badge>    |   Warning   | <span className="font-semibold text-orange-500">400</span>|  ⚠️ |
+| <Badge variant="danger">Danger</Badge>   |   Danger    | <span className="font-semibold text-red-500">500</span>   |  ⛔ |
+```
+
+| Badge                                    | Description |                         Code                                | Icon |
+| :--------------------------------------- | :---------: | :--------------------------------------------------------:  | ---: |
+| <Badge>Default</Badge>                   |   Default   | <span className="font-semibold text-blue-500">100</span>  |  ☑️ |
+| <Badge variant="success">Success</Badge> |   Success   | <span className="font-semibold text-green-500">200</span> |  ✅ |
+| <Badge variant="info">Warning</Badge>    |   Warning   | <span className="font-semibold text-orange-500">400</span>|  ⚠️ |
+| <Badge variant="danger">Danger</Badge>   |   Danger    | <span className="font-semibold text-red-500">500</span>   |  ⛔ |
+
+## Embed Iframe
+
+```jsx title="index.mdx"
+<iframe
+	width="100%"
+	height="430"
+	src="https://www.youtube.com/embed/3hccXiXI0u8"
+	frameBorder="0"
+	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+	allowFullScreen
+/>
+```
+
+<iframe
+	title="Youtube"
+	width="100%"
+	height="430"
+	src="https://www.youtube.com/embed/3hccXiXI0u8"
+	frameBorder="0"
+	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+	allowFullScreen
+/>
+
+```jsx title="index.mdx"
+<iframe
+	src="https://codesandbox.io/embed/swr-states-4une7"
+	width="100%"
+	height="500px"
+	title="SWR-States"
+></iframe>
+```
+
+<iframe
+	src="https://codesandbox.io/embed/swr-states-4une7"
+	width="100%"
+	height="500px"
+	title="SWR-States"
+></iframe>
+
+## Footnote
+
+A note[^1]
+
+[^1]: Big note.

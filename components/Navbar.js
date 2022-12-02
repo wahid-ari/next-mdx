@@ -26,7 +26,10 @@ export default function Navbar() {
           <Link href="/features/chart" className="text-sky-500 hover:text-sky-600 transition-all font-medium">
             Chart
           </Link>
-          <Link href="#" className="text-sky-500 hover:text-sky-600 transition-all font-medium">
+          <Link href="/posts" className="text-sky-500 hover:text-sky-600 transition-all font-medium">
+            Posts
+          </Link>
+          <Link href="/blog" className="text-sky-500 hover:text-sky-600 transition-all font-medium">
             Blog List
           </Link>
           <Link href="#" className="text-sky-500 hover:text-sky-600 transition-all font-medium">
