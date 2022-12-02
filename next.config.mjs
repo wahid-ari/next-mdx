@@ -5,7 +5,11 @@ import rehypePrettyCode from "rehype-pretty-code";
 
 const options = {
   // Use one of Shiki's packaged themes
-  theme: 'one-dark-pro',
+  // theme: 'one-dark-pro',
+  theme: {
+    dark: "one-dark-pro",
+    light: "github-light",
+  },
   // Or your own JSON theme
   // theme: JSON.parse(
   //   fs.readFileSync(require.resolve('./themes/dark.json'), 'utf-8')
