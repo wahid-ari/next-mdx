@@ -8,13 +8,6 @@ import Badge from "@components/Badge";
 	<meta name="description" content="MDX"></meta>
 </Head>
 
-This is an array `[1, 2, 3]{:js}` of numbers 1 through 3.
-
-```js showLineNumbers title="multiply.js" {1} /const/
-const multiply = (a, b) => a * b
-multiply(2, 2) // 4
-```
-
 # MDX Component
 
 ## Heading
@@ -231,15 +224,15 @@ www.example.com, https://example.com, and contact@example.com.
 
 Automatically syntax highlighting:
 
-````markdown filename="index.mdx"
-```js filename="index.mdx"
+````markdown
+```js title="index.mdx"
 console.log("hello, world");
 ```
 ````
 
 Renders:
 
-```js filename="index.mdx"
+```js title="index.mdx"
 console.log("hello, world");
 ```
 
@@ -259,6 +252,8 @@ function Profile() {
 ```
 ````
 
+Renders:
+
 ```jsx showLineNumbers title="index.js" {4, 7-8}
 import useSWR from "swr";
 
@@ -273,21 +268,21 @@ function Profile() {
 
 ## Diff Code
 
-````markdown filename="index.mdx"
-```diff filename="index.mdx"
+````markdown
+```diff title="index.mdx"
 - import { useSWRInfinite } from 'swr'
 + import useSWRInfinite from 'swr/infinite'
 ```
 ````
 
-```diff filename="index.mdx"
+```diff title="index.mdx"
 - import { useSWRInfinite } from 'swr'
 + import useSWRInfinite from 'swr/infinite'
 ```
 
 ## Inline Code
 
-```markdown filename="index.mdx"
+```markdown
 You can use \`content\` to wrap inline code content like: `let x = 1`.
 ```
 
@@ -295,7 +290,7 @@ You can use \`content\` to wrap inline code content like: `let x = 1`.
 
 ## Blockquote
 
-```markdown filename="index.mdx"
+```html title="index.mdx"
 > Where some people measure progress in answers-right per test or tests-passed per year, we are more interested in Sistine-Chapel-Ceilings per Lifetime.
 >
 > — Alan Kay, A Personal Computer for Children of All Ages
@@ -307,7 +302,7 @@ You can use \`content\` to wrap inline code content like: `let x = 1`.
 
 Nested quotes:
 
-```markdown filename="index.mdx"
+```html title="index.mdx"
 > > Where some people measure progress in answers-right per test or tests-passed per year, we are more interested in Sistine-Chapel-Ceilings per Lifetime.
 > >
 > > — Alan Kay, A Personal Computer for Children of All Ages
@@ -327,7 +322,7 @@ Nested quotes:
 
 ## Table
 
-```jsx filename="index.mdx"
+```jsx title="index.mdx"
 | Left | Center | Right |
 | :--- | :----: | ----: |
 | Left-aligned | Center-aligned | Right-aligned |
@@ -337,7 +332,7 @@ Nested quotes:
 | :----------- | :------------: | ------------: |
 | Left-aligned | Center-aligned | Right-aligned |
 
-```jsx filename="index.mdx"
+```jsx title="index.mdx"
 | Syntax        | Description |   Test Text |
 | :-----------  | :---------: | --------:   |
 | Header        |    Title    | Here's this |
@@ -351,7 +346,7 @@ Nested quotes:
 | Paragraph     |    Text     |    And more |
 | Strikethrough |             |    ~~Text~~ |
 
-```jsx filename="index.mdx"
+```jsx title="index.mdx"
 | Badge                                    | Description |                         Code                                | Icon |
 | :--------------------------------------- | :---------: | :--------------------------------------------------------:  | ---: |
 | <Badge>Default</Badge>                   |   Default   | <span className="font-semibold text-blue-500">100</span>  |  ☑️ |
@@ -369,7 +364,7 @@ Nested quotes:
 
 ## Embed Iframe
 
-```jsx filename="index.mdx"
+```jsx title="index.mdx"
 <iframe
 	width="100%"
 	height="430"
@@ -390,7 +385,7 @@ Nested quotes:
 	allowFullScreen
 />
 
-```jsx filename="index.mdx"
+```jsx title="index.mdx"
 <iframe
 	src="https://codesandbox.io/embed/swr-states-4une7"
 	width="100%"

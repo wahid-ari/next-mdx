@@ -8,7 +8,7 @@ export default function Accordion({ title, body }) {
         <Disclosure>
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex items-center justify-between align-middle w-full text-[15px] font-semibold text-left pl-4 pr-2 py-2 text-blue-500 rounded-lg !bg-blue-50 dark:!bg-neutral-900 dark:hover:!bg-neutral-800 hover:!bg-blue-100 transition-all duration-200">
+              <Disclosure.Button className="flex items-center justify-between align-middle w-full text-[15px] font-semibold text-left pl-4 pr-2 py-2 text-blue-500 rounded-lg !bg-blue-50/80 dark:!bg-neutral-900 dark:hover:!bg-neutral-800 hover:!bg-blue-100/70 transition-all duration-200">
                 <span>{title}</span>
                 <ChevronRightIcon
                   className={`${open ? 'transform rotate-90 transition-transform duration-300' : 'transition-transform duration-300'

@@ -1,17 +1,17 @@
 html[class="dark"] {
-	--bg-title: #242424;
+	--bg-title: #191919;
 	--title-color: #f1f1f1;
-	--bg-highlight: rgb(34, 34, 34);
+	--bg-highlight: rgb(61, 61, 61);
 	--bg-highlight-border: rgb(78, 78, 78);
 	--line-number-color: #7a7a7a;
 }
 
 html[class="light"] {
-	--bg-title: #f1f1f1;
-	--title-color: #242424;
-	--bg-highlight: rgb(238, 238, 238);
-	--bg-highlight-border: rgb(224, 224, 224);
-	--line-number-color: rgb(156, 156, 156);
+	--bg-title: #191919;
+	--title-color: #f1f1f1;
+	--bg-highlight: rgb(61, 61, 61);
+	--bg-highlight-border: rgb(78, 78, 78);
+	--line-number-color: #7a7a7a;
 }
 
 div[data-rehype-pretty-code-fragment] {
@@ -61,6 +61,10 @@ code[data-line-numbers] .line::before {
 	margin-right: 0.75rem;
 	width: 1rem;
 	color: var(--line-number-color);
+}
+
+code[data-theme="default"] {
+	background-color: rgb(0, 0, 0, 0);
 }
 
 @media (prefers-color-scheme: dark) {

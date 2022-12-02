@@ -1,15 +1,14 @@
 import remarkGfm from "remark-gfm";
-import remarkPrism from "remark-prism";
 import createMDX from "@next/mdx";
 import rehypePrettyCode from "rehype-pretty-code";
 
 const options = {
   // Use one of Shiki's packaged themes
-  // theme: 'one-dark-pro',
-  theme: {
-    dark: "one-dark-pro",
-    light: "github-light",
-  },
+  theme: 'one-dark-pro',
+  // theme: {
+  //   dark: "one-dark-pro",
+  //   light: "github-light",
+  // },
   // Or your own JSON theme
   // theme: JSON.parse(
   //   fs.readFileSync(require.resolve('./themes/dark.json'), 'utf-8')
@@ -42,7 +41,6 @@ const nextConfig = {
 const withMDX = createMDX({
   extension: /\.mdx?$/,
   options: {
-    // remarkPlugins: [remarkGfm, remarkPrism],
     remarkPlugins: [remarkGfm],
     rehypePlugins: [[rehypePrettyCode, options]],
     providerImportSource: "@mdx-js/react",
