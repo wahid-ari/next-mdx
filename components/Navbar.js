@@ -8,7 +8,7 @@ export default function Navbar() {
   // const [darkMode, setDarkMode] = useContext(GlobalContext);
 
   return (
-    <nav className="sticky top-0 z-10 bg-white dark:bg-neutral-900 shadow dark:border-b dark:border-b-neutral-800">
+    <nav className="sticky top-0 z-10 bg-white dark:bg-[#111] shadow dark:border-b dark:border-b-neutral-800">
       <div className="max-w-5xl py-4 px-2 mx-auto flex flex-wrap gap-4 justify-between">
         <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
           <Link href="/" className="text-sky-500 hover:text-sky-600 transition-all font-medium">
@@ -30,10 +30,7 @@ export default function Navbar() {
             Posts
           </Link>
           <Link href="/blog" className="text-sky-500 hover:text-sky-600 transition-all font-medium">
-            Blog List
-          </Link>
-          <Link href="#" className="text-sky-500 hover:text-sky-600 transition-all font-medium">
-            Blog Detail
+            Blog
           </Link>
         </div>
         <div className="flex flex-wrap items-center gap-x-5 gap-y-3">

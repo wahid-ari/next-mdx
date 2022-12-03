@@ -8,7 +8,7 @@ const Feature = ({ text, icon }) => (
 export default function Features() {
   return (
     <div className="mx-auto max-w-full w-[880px] text-center px-6 mb-10">
-      <p className="text-lg mb-4 mt-6 text-gray-500 md:!text-2xl">
+      <p className="text-lg mb-4 mt-6 text-gray-700 dark:text-neutral-300 md:!text-2xl">
         React Hooks for Data Fetching
       </p>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-y-5 gap-x-2 mt-10">

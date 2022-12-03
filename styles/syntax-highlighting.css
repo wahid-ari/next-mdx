@@ -1,15 +1,15 @@
 html[class="dark"] {
-	--bg-title: #313131;
+	--bg-title: rgb(32, 32, 32);
 	--title-color: #f1f1f1;
-	--bg-highlight: rgb(61, 61, 61);
+	--bg-highlight: rgb(53, 53, 53);
 	--bg-highlight-border: rgb(78, 78, 78);
 	--line-number-color: #7a7a7a;
 }
 
 html[class="light"] {
-	--bg-title: #313131;
+	--bg-title: rgb(32, 32, 32);
 	--title-color: #f1f1f1;
-	--bg-highlight: rgb(61, 61, 61);
+	--bg-highlight: rgb(53, 53, 53);
 	--bg-highlight-border: rgb(78, 78, 78);
 	--line-number-color: #7a7a7a;
 }
@@ -25,6 +25,7 @@ div[data-rehype-pretty-code-title] {
 	color: var(--title-color);
 	padding: 4px 12px;
 	font-size: 14px;
+	font-weight: 500;
 }
 
 div[data-rehype-pretty-code-fragment] pre {
