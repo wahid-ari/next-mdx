@@ -3,19 +3,8 @@ import createMDX from "@next/mdx";
 import rehypePrettyCode from "rehype-pretty-code";
 
 const options = {
-  // Use one of Shiki's packaged themes
   theme: 'one-dark-pro',
-  // theme: {
-  //   dark: "one-dark-pro",
-  //   light: "github-light",
-  // },
-  // Or your own JSON theme
-  // theme: JSON.parse(
-  //   fs.readFileSync(require.resolve('./themes/dark.json'), 'utf-8')
-  // ),
   onVisitLine(node) {
-    // Prevent lines from collapsing in `display: grid` mode, and
-    // allow empty lines to be copy/pasted
     if (node.children.length === 0) {
       node.children = [{ type: 'text', value: ' ' }];
     }

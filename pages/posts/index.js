@@ -24,7 +24,6 @@ export async function getStaticProps() {
 }
 
 export default function Posts({ posts }) {
-  console.log(posts)
   return (
     <>
       <Head>
@@ -36,15 +35,15 @@ export default function Posts({ posts }) {
       <Navbar />
 
       <main className="dark:bg-neutral-900 min-h-screen p-4">
-        <h1 className="text-center pt-10 text-3xl dark:text-white">Posts</h1>
+        <h1 className="text-center pt-10 text-4xl dark:text-white font-bold">Posts</h1>
         <div className="mx-auto max-w-3xl py-10 grid md:grid-cols-2 gap-6">
           {posts.map((post, index) => (
             <Link href={'/posts/' + post.slug} passHref key={index}>
-              <div className="border dark:border-neutral-700 rounded">
+              <div className="border dark:border-neutral-700 rounded-lg group">
                 <div className="m-auto">
                   <Image
                     src={post.frontMatter.thumbnailUrl}
-                    className="rounded"
+                    className="rounded-lg"
                     alt="thumbnail"
                     width={500}
                     height={400}
@@ -52,9 +51,9 @@ export default function Posts({ posts }) {
                   />
                 </div>
                 <div className="p-4">
-                  <h5 className="text-xl font-medium dark:text-white">{post.frontMatter.title}</h5>
-                  <p className="dark:text-neutral-200 my-2">{post.frontMatter.description}</p>
-                  <p className="text-sm dark:text-neutral-300">{post.frontMatter.date}</p>
+                  <h5 className="text-xl font-medium dark:text-white group-hover:text-sky-600 transition-all">{post.frontMatter.title}</h5>
+                  <p className="text-neutral-700 dark:text-neutral-200 my-2">{post.frontMatter.description}</p>
+                  <p className="text-sm text-neutral-500 dark:text-neutral-400">{post.frontMatter.date}</p>
                 </div>
               </div>
             </Link>

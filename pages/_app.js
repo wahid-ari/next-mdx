@@ -1,5 +1,4 @@
 import "@styles/globals.css";
-// import "@styles/prism-atom-dark.css";
 import "@styles/syntax-highlighting.css";
 import { Inter } from '@next/font/google';
 import { ThemeProvider } from 'next-themes';

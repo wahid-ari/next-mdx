@@ -1,5 +1,5 @@
 html[class="dark"] {
-	--bg-title: #191919;
+	--bg-title: #313131;
 	--title-color: #f1f1f1;
 	--bg-highlight: rgb(61, 61, 61);
 	--bg-highlight-border: rgb(78, 78, 78);
@@ -7,7 +7,7 @@ html[class="dark"] {
 }
 
 html[class="light"] {
-	--bg-title: #191919;
+	--bg-title: #313131;
 	--title-color: #f1f1f1;
 	--bg-highlight: rgb(61, 61, 61);
 	--bg-highlight-border: rgb(78, 78, 78);

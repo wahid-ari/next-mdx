@@ -9,3 +9,33 @@ tags: ['CSS']
   This is a blog post about <strong>Tailwind CSS</strong>. <br/>
   We'll learn what Tailwind CSS are, how to write Tailwind CSS, and how to use them.
 </div>
+
+```jsx title="index.js" {4, 7-8}
+import useSWR from "swr";
+
+function Profile() {
+	const { data, error } = useSWR("/api/user", fetcher);
+
+	if (error) return <div>failed to load</div>;
+	if (!data) return <div>loading...</div>;
+	return <div>hello {data.name}!</div>;
+}
+```
+
+```jsx showLineNumbers title="index.js" {4, 7-8}
+import useSWR from "swr";
+
+function Profile() {
+	const { data, error } = useSWR("/api/user", fetcher);
+
+	if (error) return <div>failed to load</div>;
+	if (!data) return <div>loading...</div>;
+	return <div>hello {data.name}!</div>;
+}
+```
+
+| Syntax        | Description |   Test Text |
+| :------------ | :---------: | ----------: |
+| Header        |    Title    | Here's this |
+| Paragraph     |    Text     |    And more |
+| Strikethrough |             |    ~~Text~~ |
