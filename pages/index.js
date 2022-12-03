@@ -13,7 +13,7 @@ export default function Home() {
 
       <Navbar />
 
-      <main className="dark:bg-neutral-900 h-screen flex items-center justify-center flex-wrap">
+      <div className="dark:bg-neutral-900 h-screen flex items-center justify-center flex-wrap">
         <div>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
             <a href="https://nextjs.org" className="text-4xl font-semibold tracking-wide text-purple-600 hover:text-purple-700 transition-all" target="_blank" rel="noopener noreferrer">Next.js</a>
@@ -26,7 +26,7 @@ export default function Home() {
             <p>Example how to setup Next.js, MDX & TailwindCSS</p>
           </div>
         </div>
-      </main>
+      </div>
     </div>
   )
 }
