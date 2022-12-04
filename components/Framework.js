@@ -17,19 +17,19 @@ export default function Framework() {
     <div className="my-4 grid md:grid-cols-3 gap-4">
       <Link href="/docs" className="no-underline">
         <div className="h-full p-4 bg-[#fafafa] dark:bg-neutral-900 rounded-md hover:cursor-pointer border border-gray-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-all">
-          <h3 className="text-neutral-900 dark:text-gray-100 text-lg m-0 mb-2">Auth</h3>
+          <p className="font-semibold text-neutral-900 dark:text-gray-100 text-lg m-0 mb-2">Auth</p>
           <p className="text-neutral-700 dark:text-gray-300 !m-0">User management</p>
         </div>
       </Link>
       <Link href="/libs/sandpack" className="no-underline">
         <div className="h-full p-4 bg-[#fafafa] dark:bg-neutral-900 rounded-md hover:cursor-pointer border border-gray-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-all">
-          <h3 className="text-neutral-900 dark:text-gray-100 text-lg m-0 mb-2">Database</h3>
+          <p className="font-semibold text-neutral-900 dark:text-gray-100 text-lg m-0 mb-2">Database</p>
           <p className="text-neutral-700 dark:text-gray-300 !m-0">Scalable Postgres database</p>
         </div>
       </Link>
       <Link href="/blog" className="no-underline">
         <div className="h-full p-4 bg-[#fafafa] dark:bg-neutral-900 rounded-md hover:cursor-pointer border border-gray-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-all">
-          <h3 className="text-neutral-900 dark:text-gray-100 text-lg m-0 mb-2">Edge Functions</h3>
+          <p className="font-semibold text-neutral-900 dark:text-gray-100 text-lg m-0 mb-2">Edge Functions</p>
           <p className="text-neutral-700 dark:text-gray-300 !m-0">Server-side functions.</p>
         </div>
       </Link>
@@ -57,7 +57,7 @@ export function Item() {
           <div className="relative h-8 w-8">
             {theme == "dark" ? <Image src={nextLight} alt="Nextjs" /> : <Image src={next} alt="Nextjs" />}
           </div>
-          <h3 className="text-neutral-900 dark:text-gray-100 text-lg m-0">Next</h3>
+          <p className="font-medium text-neutral-900 dark:text-gray-100 text-lg m-0">Next</p>
         </div>
       </a>
 
@@ -66,7 +66,7 @@ export function Item() {
           <div className="relative h-8 w-8 flex items-center">
             <Image src={vercel} alt="Vercel" layout="fill" />
           </div>
-          <h3 className="text-neutral-900 dark:text-gray-100 text-lg m-0">Vercel</h3>
+          <p className="font-medium text-neutral-900 dark:text-gray-100 text-lg m-0">Vercel</p>
         </div>
       </a>
 
@@ -75,7 +75,7 @@ export function Item() {
           <div className="relative h-8 w-8 flex items-center">
             <Image src={react} alt="React" />
           </div>
-          <h3 className="text-neutral-900 dark:text-gray-100 text-lg m-0">React</h3>
+          <p className="font-medium text-neutral-900 dark:text-gray-100 text-lg m-0">React</p>
         </div>
       </a>
 
@@ -84,7 +84,7 @@ export function Item() {
           <div className="relative h-8 w-8 flex items-center">
             <Image src={vue} alt="Vue" />
           </div>
-          <h3 className="text-neutral-900 dark:text-gray-100 text-lg m-0">Vue</h3>
+          <p className="font-medium text-neutral-900 dark:text-gray-100 text-lg m-0">Vue</p>
         </div>
       </a>
 
@@ -93,7 +93,7 @@ export function Item() {
           <div className="relative h-8 w-8 flex items-center">
             <Image src={nuxt} alt="Nuxt" />
           </div>
-          <h3 className="text-neutral-900 dark:text-gray-100 text-lg m-0">Nuxt</h3>
+          <p className="font-medium text-neutral-900 dark:text-gray-100 text-lg m-0">Nuxt</p>
         </div>
       </a>
 
@@ -102,7 +102,7 @@ export function Item() {
           <div className="relative h-8 w-8 flex items-center">
             <Image src={angular} alt="Angular" />
           </div>
-          <h3 className="text-neutral-900 dark:text-gray-100 text-lg m-0">Angular</h3>
+          <p className="font-medium text-neutral-900 dark:text-gray-100 text-lg m-0">Angular</p>
         </div>
       </a>
 
@@ -111,7 +111,7 @@ export function Item() {
           <div className="relative h-8 w-8 flex items-center">
             <Image src={svelte} alt="Svelte" />
           </div>
-          <h3 className="text-neutral-900 dark:text-gray-100 text-lg m-0">Svelte</h3>
+          <p className="font-medium text-neutral-900 dark:text-gray-100 text-lg m-0">Svelte</p>
         </div>
       </a>
 
@@ -120,7 +120,7 @@ export function Item() {
           <div className="relative h-8 w-8 flex items-center">
             <Image src={solid} alt="Solid" />
           </div>
-          <h3 className="text-neutral-900 dark:text-gray-100 text-lg m-0">Solid</h3>
+          <p className="font-medium text-neutral-900 dark:text-gray-100 text-lg m-0">Solid</p>
         </div>
       </a>
     </div>

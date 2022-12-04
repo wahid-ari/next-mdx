@@ -6,9 +6,82 @@ thumbnailUrl: '/sql.webp'
 tags: ['CSS']
 ---
 <div>
-  This is a blog post about <strong>Tailwind CSS</strong>. <br/>
+  This is a blog post about <strong>`Tailwind CSS`</strong>. <br/>
   We'll learn what Tailwind CSS are, how to write Tailwind CSS, and how to use them.
 </div>
+
+```html filename="index.mdx"
+<h1>**Hello**, This Is a _Title_ Inside `h1`</h1>
+{/* using html tag to avoid being rendered in the sidebar */}
+```
+
+```css
+--geist-foreground: #000;
+--geist-background: #fff;
+--accents-1: #fafafa;
+--accents-2: #eaeaea;
+--accents-3: #999999;
+--accents-4: #888888;
+--accents-5: #666666;
+--accents-6: #444444;
+--accents-7: #333333;
+--accents-8: #111111;
+--geist-success: #0070f3;
+--geist-error: #ee0000;
+--geist-warning: #f5a623;
+--dropdown-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.02);
+--dropdown-triangle-stroke: #fff;
+--scroller-start: var(--geist-background);
+--scroller-end: rgba(255, 255, 255, 0);
+--shadow-small: 0 5px 10px rgba(0, 0, 0, 0.12);
+--shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
+--shadow-large: 0 30px 60px rgba(0, 0, 0, 0.12);
+--portal-opacity: 0.25;
+```
+
+```markdown filename="index.mdx"
+![Image External](https://images.unsplash.com/photo-1644840379571-2a973eee0726?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=470&q=80)
+```
+
+```js filename="index.mdx"
+import Image from "next/image";
+
+<Image src="/demo.png" alt="Hello" width={500} height={300} />;
+```
+
+```js {1,3-4} showLineNumbers
+function fancyAlert(arg) {
+  if (arg) {
+    $.facebox({ div: '#foo' })
+  }
+}
+```
+
+```jsx showLineNumbers title="index.js" {4, 7-8}
+import useSWR from "swr";
+
+function Profile() {
+	const { data, error } = useSWR("/api/user", fetcher);
+
+	if (error) return <div>failed to load</div>;
+	if (!data) return <div>loading...</div>;
+	return <div>hello {data.name}!</div>;
+}
+```
+
+```diff title="index.mdx"
+- import { useSWRInfinite } from 'swr'
++ import useSWRInfinite from 'swr/infinite'
+```
+
+```jsx title="index.mdx"
+| Badge                                    | Description |                         Code                                | Icon |
+| :--------------------------------------- | :---------: | :--------------------------------------------------------:  | ---: |
+| <Badge>Default</Badge>                   |   Default   | <span className="font-semibold text-blue-500">100</span>  |  ☑️ |
+| <Badge variant="success">Success</Badge> |   Success   | <span className="font-semibold text-green-500">200</span> |  ✅ |
+| <Badge variant="info">Warning</Badge>    |   Warning   | <span className="font-semibold text-orange-500">400</span>|  ⚠️ |
+| <Badge variant="danger">Danger</Badge>   |   Danger    | <span className="font-semibold text-red-500">500</span>   |  ⛔ |
+```
 
 ```jsx title="index.js" {4, 7-8}
 import useSWR from "swr";

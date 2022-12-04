@@ -1,10 +1,9 @@
 ---
-image: https://assets.vercel.com/image/upload/v1630059453/swr/v1.png
+title: Nextra Docs
+thumbnailUrl: /demo.png
 description: "Nextra is a Next.js based static site generator. It supports Markdown and React components (MDX), automatically generated sidebar and anchor links, file-system based routing and all the features you love about Next.js."
 date: October 22th, 2022
 ---
-
-import Authors, { Author } from "@components/Authors";
 
 <br/>
 # Nextra
@@ -82,12 +81,7 @@ export default {
 }
 ```
 
-import Callout from 'nextra-theme-docs/callout'
-
-<Callout>
-  More configuration options for the docs theme can be found
-  [here](/themes/docs/configuration).
-</Callout>
+<Alert>More configuration options for the docs theme can be found [here](/themes/docs/configuration).</Alert>
 
 5. Create `pages/_app.js` and include the theme stylesheet:
 
@@ -104,13 +98,8 @@ export default function Nextra({ Component, pageProps }) {
 ---
 
 <span id="sidebar-and-anchor-links" />
-<Callout>
-  Any `.md` or `.mdx` file will turn into a doc page and be displayed in
-  sidebar. You can also create a `meta.json` file to customize the page order
-  and title. <br /> Check the source code: https://github.com/shuding/nextra for
-  more information.
-</Callout>
+<Alert>Any `.md` or `.mdx` file will turn into a doc page and be displayed in sidebar. 
+  You can also create a `meta.json` file to customize the page order and title. 
+  Check the source code: https://github.com/shuding/nextra for more information.</Alert>
 
-<Callout>
-You can also use [`<style jsx>`](https://nextjs.org/docs/basic-features/built-in-css-support#css-in-js) to style elements inside `theme.config.js`.
-</Callout>
+<Alert>You can also use [`<style jsx>`](https://nextjs.org/docs/basic-features/built-in-css-support#css-in-js) to style elements inside `theme.config.js`.</Alert>

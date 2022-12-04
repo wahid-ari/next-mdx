@@ -8,32 +8,32 @@ html {
 
 body {
 	overflow-x: hidden;
-	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 #scroll-margin-top {
-  scroll-margin-top: 1.125rem;
+	scroll-margin-top: 1.125rem;
 }
 
 .prose .anchor {
-  @apply absolute invisible no-underline;
+	@apply absolute invisible no-underline;
 
-  margin-left: -1em;
-  padding-right: 0.5em;
-  width: 80%;
-  max-width: 700px;
-  cursor: pointer;
+	margin-left: -1em;
+	padding-right: 0.5em;
+	width: 80%;
+	max-width: 700px;
+	cursor: pointer;
 }
 
 .anchor:hover {
-  @apply visible;
+	@apply visible;
 }
 
 .prose .anchor:after {
-  @apply text-gray-300 dark:text-gray-700;
-  content: '#';
+	@apply text-gray-300 dark:text-gray-700;
+	content: "#";
 }
 
 .prose *:hover > .anchor {
-  @apply visible;
+	@apply visible;
 }

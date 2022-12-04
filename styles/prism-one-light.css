@@ -1,0 +1,124 @@
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	@apply text-gray-700 dark:text-gray-300;
+}
+
+.token.punctuation {
+	@apply text-gray-700 dark:text-gray-300;
+}
+
+.token.imports {
+	@apply text-red-400;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol {
+	@apply text-green-500;
+}
+
+.token.inserted {
+	@apply text-green-500;
+}
+
+.token.deleted {
+	@apply text-red-500;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin {
+	@apply text-purple-500;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	@apply text-yellow-500;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	@apply text-blue-500;
+}
+
+.token.function,
+.token.class-name {
+	@apply text-pink-600;
+}
+
+.token.url {
+	@apply text-pink-500;
+}
+
+.token.content {
+	@apply text-sky-500;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	@apply text-yellow-500;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+	@apply text-gray-800 dark:text-gray-50;
+}
+
+/**
+ * Inspired by gatsby remark prism - https://www.gatsbyjs.com/plugins/gatsby-remark-prismjs/
+ * 1. Make the element just wide enough to fit its content.
+ * 2. Always fill the visible space in .code-highlight.
+ */
+
+code[class*="language-"] {
+	@apply dark:bg-transparent bg-white;
+}
+
+.code-highlight {
+	float: left; /* 1 */
+	min-width: 100%; /* 2 */
+}
+
+.code-line {
+	display: block;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-left: -22px;
+	margin-right: -22px;
+	border-left: 4px solid rgba(0, 0, 0, 0); /* Set placeholder for highlight accent border color to transparent */
+}
+
+.code-line.inserted {
+  @apply bg-green-500/10;
+}
+
+.code-line.deleted {
+  @apply bg-red-500/10;
+}
+
+.highlight-line {
+	@apply bg-[#f0f0f0] dark:bg-neutral-800;
+	@apply border-l-4 border-l-neutral-300 dark:border-l-neutral-700;
+}
+
+.line-number::before {
+	display: inline-block;
+	width: 1rem;
+	text-align: right;
+	margin-right: 16px;
+	margin-left: -8px;
+	color: rgb(156, 163, 175); /* Line number color */
+	content: attr(line);
+}
