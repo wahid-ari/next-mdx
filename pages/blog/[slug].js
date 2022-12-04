@@ -55,7 +55,7 @@ export async function getStaticPaths() {
   }
 }
 
-export default function Post({ frontMatter: { title, date, description, thumbnailUrl }, mdxSource }) {
+export default function Post({ frontMatter: { title, description, thumbnailUrl }, mdxSource }) {
   return (
     <>
       <Head>

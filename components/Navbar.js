@@ -1,11 +1,7 @@
 import Link from "next/link";
-// import { useContext } from "react";
-// import { GlobalContext } from "@utils/GlobalContext";
-// import { SunIcon, MoonIcon } from "@heroicons/react/24/outline"
 import ThemeChanger from "./ThemeChanger";
 
 export default function Navbar() {
-  // const [darkMode, setDarkMode] = useContext(GlobalContext);
 
   return (
     <nav className="sticky top-0 z-10 bg-white dark:bg-[#111] shadow dark:border-b dark:border-b-neutral-800">
