@@ -34,3 +34,7 @@ body {
 .prose *:hover > .anchor {
 	@apply visible;
 }
+
+.table-container{
+	overflow: auto;
+}

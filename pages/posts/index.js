@@ -41,7 +41,7 @@ export default function Posts({ posts }) {
 
       <Navbar />
 
-      <div className="dark:bg-neutral-[#111] mx-auto max-w-5xl min-h-screen px-2">
+      <div className="dark:bg-neutral-[#111] mx-auto max-w-5xl min-h-screen px-2 pb-16">
         <h1 className="text-center py-16 text-4xl dark:text-white font-bold">Posts</h1>
         <div className="mx-auto relative w-full mb-4">
           <input
