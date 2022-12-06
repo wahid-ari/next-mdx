@@ -4,15 +4,12 @@
 
 html {
 	scroll-behavior: smooth;
+	scroll-padding-top: 4rem;
 }
 
 body {
 	overflow-x: hidden;
 	font-family: "Plus Jakarta Sans", sans-serif;
-}
-
-#scroll-margin-top {
-	scroll-margin-top: 1.125rem;
 }
 
 .prose .anchor {

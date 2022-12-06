@@ -36,7 +36,6 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       frontMatter,
-      slug,
       mdxSource
     }
   }
@@ -56,10 +55,11 @@ export async function getStaticPaths() {
 }
 
 export default function Post({ frontMatter: { title, description, thumbnailUrl }, mdxSource }) {
+  const titleFix = `${title} | Next MDX`
   return (
     <>
       <Head>
-        <title>{title} | Next MDX</title>
+        <title>{titleFix}</title>
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
