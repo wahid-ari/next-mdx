@@ -4,7 +4,7 @@ export default function FeaturesLayout({ children }) {
   return (
     <>
       <Navbar />
-      <div className="dark:bg-bg-[#111] min-h-screen py-8">
+      <div className="dark:bg-[#111] min-h-screen py-8">
         <div className="mx-auto max-w-5xl px-2 min-h-screen 
           prose prose-img:m-0 prose-a:text-sky-500 dark:prose-invert
           prose-h1:mt-8 prose-h2:mt-8 prose-h3:mt-4

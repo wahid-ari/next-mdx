@@ -35,26 +35,28 @@ export default function blog({ blog }) {
 
       <Navbar />
 
-      <div className="dark:bg-neutral-[#111] mx-auto max-w-5xl min-h-screen px-2">
-        <h1 className="text-center py-16 text-4xl dark:text-white font-bold">Blog</h1>
-        <div className="mx-auto py-4 flex flex-col space-y-8">
-          {blog.map((item, index) => (
-            <>
-              <Link href={'/blog/' + item.slug} passHref key={index}>
-                <div className="group transition-all duration-200">
-                  <h4 className="text-2xl font-medium group-hover:text-sky-600 transition-all duration-200">{item.frontMatter.title}</h4>
-                  <p className="text-neutral-700 dark:text-neutral-300 my-2">
-                    {item.frontMatter.description}
-                  </p>
-                  <p className="pt-2.5 text-sm text-neutral-500 dark:text-neutral-400 flex items-center gap-1">
-                    <CalendarDaysIcon className="h-5 w-5" />
-                    {item.frontMatter.date}
-                  </p>
-                </div>
-              </Link>
-              {index + 1 != blog.length ? <hr className="border-t dark:border-neutral-800" /> : null}
-            </>
-          ))}
+      <div className="dark:bg-[#111]">
+        <div className="mx-auto max-w-5xl min-h-screen px-2">
+          <h1 className="text-center py-16 text-4xl dark:text-white font-bold">Blog</h1>
+          <div className="mx-auto py-4 flex flex-col space-y-8">
+            {blog.map((item, index) => (
+              <>
+                <Link href={'/blog/' + item.slug} passHref key={index}>
+                  <div className="group transition-all duration-200">
+                    <h4 className="text-2xl font-medium group-hover:text-sky-600 transition-all duration-200">{item.frontMatter.title}</h4>
+                    <p className="text-neutral-700 dark:text-neutral-300 my-2">
+                      {item.frontMatter.description}
+                    </p>
+                    <p className="pt-2.5 text-sm text-neutral-500 dark:text-neutral-400 flex items-center gap-1">
+                      <CalendarDaysIcon className="h-5 w-5" />
+                      {item.frontMatter.date}
+                    </p>
+                  </div>
+                </Link>
+                {index + 1 != blog.length ? <hr className="border-t dark:border-neutral-800" /> : null}
+              </>
+            ))}
+          </div>
         </div>
       </div>
     </>
